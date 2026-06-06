@@ -1,0 +1,4 @@
+domain_path: /home/brage/embedded/z7nano/CPU/platform/export/platform/sw/standalone_ps7_cortexa9_0
+app_src_dir: /home/brage/.local/share/vivado/2025.2/Vitis/data/embeddedsw/lib/sw_apps/hello_world
+template: hello_world
+lang: c

@@ -1,0 +1,22 @@
+#!/user/bin/fontforge
+#
+Open("origin/"+$1)
+# Exclude the frak math non-bold fonts
+u=120068
+while(u <= 120119)
+   SelectMoreIf(UCodePoint(u))
+   ++u
+endloop
+SelectInvert()
+# Simplify()
+joinstyle = 1 # round
+ExpandStroke(18, 1, joinstyle, 0, 1)
+RemoveOverlap()
+#
+# Without manually re-hinting, the fonts are not displayed correctly.
+#
+ClearHints()
+Simplify()
+RoundToInt()
+Generate($1)
+Close()

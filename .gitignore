@@ -1,0 +1,7 @@
+.zig-cache/
+zig-out/
+build/
+Build/
+node_modules/
+*.otf
+*.ttf

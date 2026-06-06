@@ -1,0 +1,5 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "FeatherWing_KC5-cache") (type "Legacy") (uri "/Users/runger/Documents/making/kicad/3rd-party/FeatherWing-template-KiCad/FeatherWing_KC5/FeatherWing_KC5-cache.lib") (options "") (descr ""))
+	(lib (name "ESCv1.1-cache") (type "Legacy") (uri "/home/brage/Downloads/roboesc_v3_MKR-master/ESCv1.1-cache.lib") (options "") (descr "Legacy project cache library"))
+)

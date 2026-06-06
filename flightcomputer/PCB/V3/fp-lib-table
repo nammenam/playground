@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "lib_fp")(type "KiCad")(uri "/home/brage/portalSpace/COMPASS/PCB/lib_fp.pretty")(options "")(descr ""))
+)

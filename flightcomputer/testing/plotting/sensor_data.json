@@ -1,0 +1,78 @@
+[
+    {
+        "accelerometerData": {
+            "x": null,
+            "y": -2.4307011714414573e-127,
+            "z": 0.0
+        },
+        "gyroData": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "magnetometerData": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "msAfterLaunch": 2779055080,
+        "pressureSensorData": 0
+    },
+    {
+        "accelerometerData": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "gyroData": {
+            "x": 0.002980081733389981,
+            "y": -0.0020824667534532397,
+            "z": 0.10006611796334794
+        },
+        "magnetometerData": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+        },
+        "msAfterLaunch": 0,
+        "pressureSensorData": 0
+    },
+    {
+        "accelerometerData": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "gyroData": {
+            "x": 5e-324,
+            "y": 0.003189525228708554,
+            "z": -0.0020944349531857296
+        },
+        "magnetometerData": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "msAfterLaunch": 1438814044,
+        "pressureSensorData": 2800385114
+    },
+    {
+        "accelerometerData": {
+            "x": -0.000437499990221113,
+            "y": 0.0,
+            "z": 0.0
+        },
+        "gyroData": {
+            "x": 0.0,
+            "y": 5e-324,
+            "z": 0.003004018132854961
+        },
+        "magnetometerData": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "msAfterLaunch": 0,
+        "pressureSensorData": 4123393060
+    }
+]

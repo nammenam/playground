@@ -1,0 +1,13 @@
+site/
+COMPASS-harmonyProject/firmware/COMPASS.X/build/
+COMPASS-harmonyProject/firmware/COMPASS.X/dist/
+COMPASS-harmonyProject/firmware/COMPASS.X/.generated_files/
+.cache/
+compile_commands.*
+archive/flight_computer/firmware/flight_computer.X/build/
+archive/flight_computer/firmware/flight_computer.X/dist/
+archive/flight_computer/firmware/flight_computer.X/.generated_files/
+NAV_V2_final-backups/
+.ccls
+.ccls-cache/
+.clang-format

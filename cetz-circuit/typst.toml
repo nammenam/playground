@@ -1,0 +1,18 @@
+[package]
+name = "cetz-graph"
+version = "0.1.0"
+compiler = "0.13.0"
+entrypoint = "src/lib.typ"
+authors = ["Brage Wiseth"]
+license = "MIT"
+description = "Draw circuits with cetz"
+repository = ""
+categories = ["visualization", "components"]
+keywords = [
+	"diagram",
+	"flowchart",
+	"graph",
+	"network",
+	"node",
+]
+exclude = ["docs/", "tests/"]

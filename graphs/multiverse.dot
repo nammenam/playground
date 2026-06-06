@@ -1,0 +1,44 @@
+digraph StateSpace {
+  rankdir="LR";
+  node [shape="box", style="filled", fontname="Courier"];
+
+  "(0, 0, 0)" [label="C:0 R:0\nCop Turn\n(Step 0)", fillcolor="gold"];
+  "(0, 0, 1)" [label="C:0 R:0\nRob Turn\n(Step 0)", fillcolor="gold"];
+  "(0, 1, 0)" [label="C:0 R:1\nCop Turn\n(Step 1)", fillcolor="lightgreen"];
+  "(0, 1, 1)" [label="C:0 R:1\nRob Turn\n(Step 3)", fillcolor="plum1"];
+  "(0, 2, 0)" [label="C:0 R:2\nCop Turn\n(Step 2)", fillcolor="skyblue"];
+  "(0, 2, 1)" [label="C:0 R:2\nRob Turn\n(Step 2)", fillcolor="skyblue"];
+  "(1, 0, 0)" [label="C:1 R:0\nCop Turn\n(Step 1)", fillcolor="lightgreen"];
+  "(1, 0, 1)" [label="C:1 R:0\nRob Turn\n(Step 1)", fillcolor="lightgreen"];
+  "(1, 1, 0)" [label="C:1 R:1\nCop Turn\n(Step 0)", fillcolor="gold"];
+  "(1, 1, 1)" [label="C:1 R:1\nRob Turn\n(Step 0)", fillcolor="gold"];
+  "(1, 2, 0)" [label="C:1 R:2\nCop Turn\n(Step 1)", fillcolor="lightgreen"];
+  "(1, 2, 1)" [label="C:1 R:2\nRob Turn\n(Step 1)", fillcolor="lightgreen"];
+  "(2, 0, 0)" [label="C:2 R:0\nCop Turn\n(Step 2)", fillcolor="skyblue"];
+  "(2, 0, 1)" [label="C:2 R:0\nRob Turn\n(Step 2)", fillcolor="skyblue"];
+  "(2, 1, 0)" [label="C:2 R:1\nCop Turn\n(Step 1)", fillcolor="lightgreen"];
+  "(2, 1, 1)" [label="C:2 R:1\nRob Turn\n(Step 3)", fillcolor="plum1"];
+  "(2, 2, 0)" [label="C:2 R:2\nCop Turn\n(Step 0)", fillcolor="gold"];
+  "(2, 2, 1)" [label="C:2 R:2\nRob Turn\n(Step 0)", fillcolor="gold"];
+
+  "(0, 0, 0)" -> "(0, 1, 1)" [style="dashed", color="gray"];
+  "(0, 0, 1)" -> "(1, 0, 0)" [style="bold", color="blue"];
+  "(1, 1, 0)" -> "(1, 0, 1)" [style="dashed", color="gray"];
+  "(1, 1, 0)" -> "(1, 0, 1)" [style="bold", color="red"];
+  "(1, 1, 0)" -> "(1, 2, 1)" [style="dashed", color="gray"];
+  "(1, 1, 0)" -> "(1, 2, 1)" [style="bold", color="red"];
+  "(1, 1, 1)" -> "(0, 1, 0)" [style="bold", color="blue"];
+  "(1, 1, 1)" -> "(2, 1, 0)" [style="bold", color="blue"];
+  "(2, 2, 0)" -> "(2, 1, 1)" [style="dashed", color="gray"];
+  "(2, 2, 1)" -> "(1, 2, 0)" [style="bold", color="blue"];
+  "(1, 0, 1)" -> "(2, 0, 0)" [style="bold", color="blue"];
+  "(1, 2, 1)" -> "(0, 2, 0)" [style="bold", color="blue"];
+  "(0, 1, 0)" -> "(0, 2, 1)" [style="dashed", color="gray"];
+  "(0, 1, 0)" -> "(0, 2, 1)" [style="bold", color="red"];
+  "(2, 1, 0)" -> "(2, 0, 1)" [style="dashed", color="gray"];
+  "(2, 1, 0)" -> "(2, 0, 1)" [style="bold", color="red"];
+  "(2, 0, 0)" -> "(2, 1, 1)" [style="dashed", color="gray"];
+  "(2, 0, 0)" -> "(2, 1, 1)" [style="bold", color="red"];
+  "(0, 2, 0)" -> "(0, 1, 1)" [style="dashed", color="gray"];
+  "(0, 2, 0)" -> "(0, 1, 1)" [style="bold", color="red"];
+}

@@ -1,0 +1,24 @@
+Column1;Column2;Column3;Column5;Column6;Column7
+Ref;Qnty;Value;Footprint;Description;Vendor
+C1, C2, C3, C14, C15, C18, C19, ;7;10uF;Capacitor_SMD:C_0603_1608Metric;Unpolarized capacitor, small symbol;
+C4, C5, C6, C8, C9, C10, C11, C12, C13, C17, C20, C21, C22, C23, C25, C26, ;16;100nF;Capacitor_SMD:C_0603_1608Metric;Unpolarized capacitor, small symbol;
+C7, ;1;4.7uF;Capacitor_SMD:C_0603_1608Metric;Unpolarized capacitor, small symbol;
+C16, ;1;22uF;Capacitor_SMD:C_0603_1608Metric;Unpolarized capacitor, small symbol;
+D1, D2, D3, D4, ;4;LED;LED_SMD:LED_0603_1608Metric;Light emitting diode;
+IC1, ;1;TPS2114PW;SOP65P640X120-8N;Dual In/Single Out Autoswitching Power MUX, Manual/Auto Switching, Adj. Cur Limit, Switch Status;
+J1, ;1;Conn_01x06;Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical;Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/);
+J2, ;1;Conn_02x02_Odd_Even;Connector_Molex:Molex_Micro-Fit_3.0_43045-0412_2x02_P3.00mm_Vertical;Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/);
+J3, J4, ;2;Conn_01x03;Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical;Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/);
+J6, ;1;Cortex Debug Connector;My Connectors:20021521-00010T1LF;Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/);
+L1, ;1;10uH;Inductor_SMD:L_0603_1608Metric;Inductor, small symbol;
+R1, R7, R10, R13, ;4;2k2;Resistor_SMD:R_0603_1608Metric;Resistor, small symbol;
+R3, R4, R5, R6, R8, R9, R11, ;7;10k;Resistor_SMD:R_0603_1608Metric;Resistor, small symbol;
+R12, ;1;400;Resistor_SMD:R_0603_1608Metric;Resistor, small symbol;
+U1, ;1;ATSAME53J18A-M;Package_DFN_QFN:QFN-64-1EP_9x9mm_P0.5mm_EP4.7x4.7mm;SAM E53 Microchip SMART ARM Cortex-M4F based MCU, 256K Flash, 128K SRAM, QFN-64;
+U2, ;1;ISM330DHCXTR;IMU:ISM330DHCXTR;;
+U3, ;1;MLX90395KGO-BBA-101-SP;Magnetometer:MLX90395KGO-BBA-101-SP;;
+U4, ;1;MS5611-01BA;Package_LGA:LGA-8_3x5mm_P1.25mm;Barometric pressure sensor, 10cm resolution, 10 to 1200 mbar, I2C and SPI interface up to 20MHz, LGA-8;
+U5, ;1;AZ1117-3.3;Package_TO_SOT_SMD:SOT-89-3;1A 20V Fixed LDO Linear Regulator, 3.3V, SOT-89/SOT-223/TO-220/TO-252/TO-263;
+U6, ;1;2201778-1;My SD-card:2201778-1;;
+U7, ;1;2468;Battery:BatteryHolder_Keystone_2468_2xAAA;KEYSTONE - 2462 - BATTERY HOLDER;
+;;;;;

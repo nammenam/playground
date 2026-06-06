@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat May 23 16:57:23 2026
+# Process ID         : 30510
+# Current directory  : /home/brage/embedded/z7nano
+# Command line       : vivado
+# Log file           : /home/brage/embedded/z7nano/vivado.log
+# Journal file       : /home/brage/embedded/z7nano/vivado.jou
+# Running On         : arch
+# Platform           : Arch
+# Operating System   : Arch Linux
+# Processor Detail   : AMD Ryzen 9 5900HX with Radeon Graphics
+# CPU Frequency      : 2473.226 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16128 MB
+# Swap memory        : 7999 MB
+# Total Virtual      : 24128 MB
+# Available Virtual  : 17470 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/brage/embedded/z7nano/FPGA/platform/platform.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/brage/embedded/z7nano/FPGA/platform/platform.srcs/sources_1/bd/ps/ps.bd}
+startgroup
+set_property -dict [list \
+  CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {1} \
+  CONFIG.PCW_GPIO_MIO_GPIO_IO {MIO} \
+] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+generate_target all [get_files  /home/brage/embedded/z7nano/FPGA/platform/platform.srcs/sources_1/bd/ps/ps.bd]
+export_ip_user_files -of_objects [get_files /home/brage/embedded/z7nano/FPGA/platform/platform.srcs/sources_1/bd/ps/ps.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/brage/embedded/z7nano/FPGA/platform/platform.srcs/sources_1/bd/ps/ps.bd]
+launch_runs ps_processing_system7_0_0_synth_1 -jobs 8
+wait_on_run ps_processing_system7_0_0_synth_1
+export_simulation -lib_map_path [list {modelsim=/home/brage/embedded/z7nano/FPGA/platform/platform.cache/compile_simlib/modelsim} {questa=/home/brage/embedded/z7nano/FPGA/platform/platform.cache/compile_simlib/questa} {xcelium=/home/brage/embedded/z7nano/FPGA/platform/platform.cache/compile_simlib/xcelium} {vcs=/home/brage/embedded/z7nano/FPGA/platform/platform.cache/compile_simlib/vcs} {riviera=/home/brage/embedded/z7nano/FPGA/platform/platform.cache/compile_simlib/riviera}] -of_objects [get_files /home/brage/embedded/z7nano/FPGA/platform/platform.srcs/sources_1/bd/ps/ps.bd] -directory /home/brage/embedded/z7nano/FPGA/platform/platform.ip_user_files/sim_scripts -ip_user_files_dir /home/brage/embedded/z7nano/FPGA/platform/platform.ip_user_files -ipstatic_source_dir /home/brage/embedded/z7nano/FPGA/platform/platform.ip_user_files/ipstatic -use_ip_compiled_libs -force -quiet
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs ps_processing_system7_0_0_synth_1]
+write_hw_platform -fixed -include_bit -force -file /home/brage/embedded/z7nano/FPGA/platform/ps_wrapper.xsa
