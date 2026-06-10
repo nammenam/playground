@@ -8,15 +8,15 @@ pub fn build(b: *std.Build) void {
         .target = target,
     });
 
-    const alsa = b.addTranslateC(.{
+    mod.linkSystemLibrary("jack", .{});
+    const jack = b.addTranslateC(.{
         .optimize = optimize,
         .target = target,
-        .root_source_file = b.path("alsa.h"),
+        .root_source_file = b.path("src/jack.h"),
+        .link_libc = true,
     });
 
-    mod.link_libc = true;
-    mod.linkSystemLibrary("asound", .{});
-    mod.addImport("alsa", alsa.createModule());
+    mod.addImport("jack", jack.createModule());
 
     const exe = b.addExecutable(.{
         .name = "audio",

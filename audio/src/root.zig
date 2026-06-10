@@ -1,1 +1,1 @@
-pub const alsa = @import("alsa");
+pub const jack = @import("jack");
